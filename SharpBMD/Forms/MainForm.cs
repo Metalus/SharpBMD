@@ -25,5 +25,14 @@ namespace SharpBMD
 
             this.Visible = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+            new ItemForm().ShowDialog();
+
+            this.Visible = true;
+        }
     }
 }

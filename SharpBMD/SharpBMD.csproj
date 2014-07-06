@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\Constants.cs" />
+    <Compile Include="Code\Item\ItemInfo.cs" />
+    <Compile Include="Code\Item\TypeItem.cs" />
     <Compile Include="Code\TextLines.cs" />
     <Compile Include="Forms\ItemForm.cs">
       <SubType>Form</SubType>
@@ -94,9 +96,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Code\Item\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
