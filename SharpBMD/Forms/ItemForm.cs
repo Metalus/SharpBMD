@@ -36,7 +36,7 @@ namespace SharpBMD.Forms
                 using(FileStream FS = File.Open(openFileDialog1.FileName,FileMode.Open))
                 {
                     if (FS.Length != 917508 && FS.Length != 688132)
-                        throw new FileLoadException("O tamanho do arquivo é diferente de 1800000 e 900000 bytes");
+                        throw new FileLoadException("O tamanho do arquivo é diferente de 917508 e 688132 bytes");
 
                     uint Reason = (uint)((FS.Length - 4) / ITEMS_TOTAL);
                     byte[] ReadBytes = new byte[Reason];
@@ -44,8 +44,8 @@ namespace SharpBMD.Forms
                     for (int i = 0; i < ITEMS_TOTAL; i++)
                     {
                         FS.Read(ReadBytes, 0, ReadBytes.Length);
-                        int IndexItem = ( 512 + i) % 512;
-                        int ClassItem = (i-IndexItem) / 512;
+                        int IndexItem = (ITEMS_PERTYPE + i) % ITEMS_PERTYPE;
+                        int ClassItem = (i - IndexItem) / ITEMS_PERTYPE;
                         ItemInfo item = new ItemInfo(ReadBytes, (TypeItem)ClassItem, IndexItem);
 
                         DataGridViewRow row = dataGridView1.Rows[i];

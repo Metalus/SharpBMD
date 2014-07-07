@@ -50,7 +50,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(115, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 23);
+            this.button2.Size = new System.Drawing.Size(93, 23);
             this.button2.TabIndex = 0;
             this.button2.Text = "Skill.bmd";
             this.button2.UseVisualStyleBackColor = true;
@@ -71,17 +71,17 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(112, 45);
+            this.label1.Location = new System.Drawing.Point(9, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 14);
+            this.label1.Size = new System.Drawing.Size(191, 14);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Created by Metal!";
+            this.label1.Text = "Créditos: MeTaL e navossoc";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 73);
+            this.ClientSize = new System.Drawing.Size(215, 87);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
